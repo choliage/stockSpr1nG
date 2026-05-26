@@ -112,7 +112,9 @@ def scrape_udn_latest_stock_news(base_dir=None):
 
     logger.info(f"總共在所有 target container 找到 {len(news_links)} 個 a[href] 連結。開始進行篩選與爬取...\n")
 
-    seen_file = os.path.join(base_dir, 'seen_links.pkl.gz')
+    news_root = os.path.join(base_dir, "News_txts")
+    os.makedirs(news_root, exist_ok=True)
+    seen_file = os.path.join(news_root, 'seen_links.pkl.gz')
     seen_links = load_seen_hashes(seen_file)
     article_count = 0
     new_added = 0
