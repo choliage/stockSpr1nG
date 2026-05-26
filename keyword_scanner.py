@@ -24,34 +24,6 @@ def get_news_root(base_dir=None):
     return os.path.join(base_dir, "News_txts")
 
 
-def _parse_title_and_company(text, file_path):
-    company_name = ""
-    title = ""
-    for line in text.splitlines():
-        if line.startswith("Title:"):
-            title = line.split("Title:", 1)[1].strip()
-            break
-    if not title:
-        basename = os.path.basename(file_path)
-        title = os.path.splitext(basename)[0]
-        if len(title) > 11 and re.match(r"^\d{4}_\d{2}_\d{2}_", title):
-            title = title[11:]
-    if title:
-        company_name = _extract_company_name(title)
-    return title, company_name
-
-
-def _extract_company_name(title):
-    if not title:
-        return ""
-    for sep in ["：", ":", "-", "–", "_", "|"]:
-        if sep in title:
-            candidate = title.split(sep, 1)[0].strip()
-            if candidate:
-                return candidate
-    return title.strip()
-
-
 def _normalize_date_from_path(file_path):
     parent_dir = os.path.basename(os.path.dirname(file_path))
     if re.match(r"^\d{4}_\d{2}_\d{2}$", parent_dir):
@@ -72,21 +44,20 @@ def scan_txt_file_for_keywords(file_path):
     except Exception:
         return []
 
-    matches = set(m.group(0) for m in KEYWORD_PATTERN.finditer(text))
+    matches = {m.group(0) for m in KEYWORD_PATTERN.finditer(text)}
     if not matches:
         return []
 
-    title, company_name = _parse_title_and_company(text, file_path)
+    sorted_matches = sorted(matches, key=lambda x: KEYWORDS.index(x) if x in KEYWORDS else 999)
+    keyword_list = ", ".join(sorted_matches)
+    keyword_count = len(sorted_matches)
     date_str = _normalize_date_from_path(file_path)
-    rows = []
-    for keyword in sorted(matches, key=lambda x: KEYWORDS.index(x) if x in KEYWORDS else 999):
-        rows.append({
-            "date": date_str,
-            "file_name": os.path.basename(file_path),
-            "keyword": keyword,
-            "company_name": company_name,
-        })
-    return rows
+    return [{
+        "date": date_str,
+        "file_name": os.path.basename(file_path),
+        "keywords": keyword_list,
+        "keyword_count": keyword_count,
+    }]
 
 
 def _collect_txt_files(base_dir=None):
@@ -117,9 +88,9 @@ def _write_excel_for_month(month, rows, output_dir):
     wb = Workbook()
     ws = wb.active
     ws.title = "關鍵字"
-    ws.append(["日期", "新聞txt檔案名稱", "關鍵字", "公司名稱"])
-    for row in sorted(rows, key=lambda x: (x["date"], x["file_name"], x["keyword"])):
-        ws.append([row["date"], row["file_name"], row["keyword"], row["company_name"]])
+    ws.append(["日期", "新聞txt檔案名稱", "關鍵字", "符合數量"])
+    for row in sorted(rows, key=lambda x: (x["date"], x["file_name"], x["keywords"])):
+        ws.append([row["date"], row["file_name"], row["keywords"], row["keyword_count"]])
 
     output_path = os.path.join(output_dir, f"keyword_matches_{month}.xlsx")
     wb.save(output_path)

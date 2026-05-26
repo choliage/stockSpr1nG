@@ -1,6 +1,5 @@
 import time
 import os
-
 import log
 from scraper import scrape_udn_latest_stock_news
 from keyword_scanner import scan_keywords_and_export_excels
