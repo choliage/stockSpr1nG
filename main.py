@@ -1,17 +1,19 @@
 import time
-import os
 
-import log
-from scraper import scrape_udn_latest_stock_news
+from log import setup_logger
+from scraper import RUN_INTERVAL_SECONDS, scrape_active_sources
 
-DEFAULT_BASE_DIR = os.path.join(os.path.expanduser("~"), "Desktop")
-logger = log.setup_logger(base_dir=DEFAULT_BASE_DIR)
 
-if __name__ == "__main__":
+def main():
+    logger = setup_logger()
     try:
         while True:
-            scrape_udn_latest_stock_news(base_dir=DEFAULT_BASE_DIR)
-            logger.info("本輪爬取完成，等待 90 分鐘後再次執行...")
-            time.sleep(90 * 60)
+            scrape_active_sources(logger=logger)
+            logger.info(f"本輪爬取完成，等待 {RUN_INTERVAL_SECONDS // 60} 分鐘後再次執行...")
+            time.sleep(RUN_INTERVAL_SECONDS)
     except KeyboardInterrupt:
         logger.info("收到中斷 (KeyboardInterrupt)，程式結束。")
+
+
+if __name__ == "__main__":
+    main()
