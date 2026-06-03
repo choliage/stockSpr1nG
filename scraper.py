@@ -10,7 +10,14 @@ from urllib.parse import urljoin, urlparse, urlunparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from newspaper import Article
+
+try:
+    from newspaper import Article
+except ModuleNotFoundError as exc:
+    raise ModuleNotFoundError(
+        "newspaper3k requires the lxml html clean dependency. "
+        "請安裝 'lxml[html-clean]' 或 'lxml_html_clean' 之後再重試。"
+    ) from exc
 
 logger = logging.getLogger("stock_scraper")
 DEFAULT_BASE_DIR = os.path.join(os.path.expanduser("~"), "Desktop")
@@ -112,7 +119,9 @@ def scrape_udn_latest_stock_news(base_dir=None):
 
     logger.info(f"總共在所有 target container 找到 {len(news_links)} 個 a[href] 連結。開始進行篩選與爬取...\n")
 
-    seen_file = os.path.join(base_dir, 'seen_links.pkl.gz')
+    news_root = os.path.join(base_dir, "News_txts")
+    os.makedirs(news_root, exist_ok=True)
+    seen_file = os.path.join(news_root, 'seen_links.pkl.gz')
     seen_links = load_seen_hashes(seen_file)
     article_count = 0
     new_added = 0

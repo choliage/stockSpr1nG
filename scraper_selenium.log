@@ -1,0 +1,186 @@
+2026-06-03 23:53:11,701 - [Thread-MainThread] - INFO - ====== WebDriver manager ======
+2026-06-03 23:53:12,687 - [Thread-MainThread] - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-03 23:53:13,131 - [Thread-MainThread] - INFO - There is no [win64] chromedriver "148.0.7778.178" for browser google-chrome "148.0.7778" in cache
+2026-06-03 23:53:13,562 - [Thread-MainThread] - INFO - There is no [win64] chromedriver "148.0.7778.178" for browser google-chrome "148.0.7778" in cache
+2026-06-03 23:53:13,562 - [Thread-MainThread] - INFO - Get LATEST chromedriver version for google-chrome
+2026-06-03 23:53:14,513 - [Thread-MainThread] - INFO - WebDriver version 148.0.7778.178 selected
+2026-06-03 23:53:14,520 - [Thread-MainThread] - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.178/win64/chromedriver-win64.zip
+2026-06-03 23:53:14,520 - [Thread-MainThread] - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/148.0.7778.178/win64/chromedriver-win64.zip
+2026-06-03 23:53:14,821 - [Thread-MainThread] - INFO - Driver downloading response is 200
+2026-06-03 23:53:16,404 - [Thread-MainThread] - INFO - Driver has been saved in cache [C:\Users\lolee\.wdm\drivers\chromedriver\win64\148.0.7778.178]
+2026-06-03 23:53:32,108 - [Thread-MainThread] - INFO - ============================================================
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - ⚡ requests 下載版 | Workers: 2 | Headless: True
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - 🏢 預計處理公司數: 1 家
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - 🎯 範圍: 2000 ~ 2330
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - 🧭 最近年度窗口（西元）：2024 ~ 2026（只抓最近四年）
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - 🧩 舊年度策略：僅依 DB 判定缺口（DB 無紀錄即不掃）
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - 📅 今年季報：依月份 gate 未到公告期直接跳過
+2026-06-03 23:53:32,109 - [Thread-MainThread] - INFO - ============================================================
+2026-06-03 23:53:32,110 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2014 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:53:32,111 - [Thread-ThreadPoolExecutor-0_0] - INFO - 🚀 偵測到檔案缺漏，啟動瀏覽器處理公司: 2330
+2026-06-03 23:53:35,456 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2014 Q1] 下載成功(requests) -> 201401_2330_合併財報.pdf
+2026-06-03 23:53:35,520 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2014 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:53:39,323 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2014 Q2] 下載成功(requests) -> 201402_2330_合併財報.pdf
+2026-06-03 23:53:39,344 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2014 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:53:44,625 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2014 Q3] 下載成功(requests) -> 201403_2330_合併財報.pdf
+2026-06-03 23:53:44,684 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2014 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:53:52,076 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2014 Q4] 下載成功(requests) -> 201404_2330_合併財報.pdf
+2026-06-03 23:53:52,147 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2015 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:53:55,166 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2015 Q1] 下載成功(requests) -> 201501_2330_合併財報.pdf
+2026-06-03 23:53:55,235 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2015 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:53:59,668 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2015 Q2] 下載成功(requests) -> 201502_2330_合併財報.pdf
+2026-06-03 23:53:59,726 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2015 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:54:01,466 - [Thread-ThreadPoolExecutor-0_0] - WARNING - ⛔ [2330] 查詢過量，退避 45.6s (attempt 1/4)
+2026-06-03 23:54:49,138 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2015 Q3] 下載成功(requests) -> 201503_2330_合併財報.pdf
+2026-06-03 23:54:49,206 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2015 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:54:53,999 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2015 Q4] 下載成功(requests) -> 201504_2330_合併財報.pdf
+2026-06-03 23:54:54,068 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2016 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:54:58,243 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2016 Q1] 下載成功(requests) -> 201601_2330_合併財報.pdf
+2026-06-03 23:54:58,303 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2016 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:02,845 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2016 Q2] 下載成功(requests) -> 201602_2330_合併財報.pdf
+2026-06-03 23:55:02,906 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2016 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:06,640 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2016 Q3] 下載成功(requests) -> 201603_2330_合併財報.pdf
+2026-06-03 23:55:06,702 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2016 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:13,141 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2016 Q4] 下載成功(requests) -> 201604_2330_合併財報.pdf
+2026-06-03 23:55:13,207 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2017 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:15,970 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2017 Q1] 下載成功(requests) -> 201701_2330_合併財報.pdf
+2026-06-03 23:55:16,032 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2017 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:20,453 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2017 Q2] 下載成功(requests) -> 201702_2330_合併財報.pdf
+2026-06-03 23:55:20,512 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2017 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:24,517 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2017 Q3] 下載成功(requests) -> 201703_2330_合併財報.pdf
+2026-06-03 23:55:24,585 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2017 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:30,177 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2017 Q4] 下載成功(requests) -> 201704_2330_合併財報.pdf
+2026-06-03 23:55:30,203 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2018 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:35,435 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2018 Q1] 下載成功(requests) -> 201801_2330_合併財報.pdf
+2026-06-03 23:55:35,506 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2018 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:55:37,531 - [Thread-ThreadPoolExecutor-0_0] - WARNING - ⛔ [2330] 查詢過量，退避 42.1s (attempt 1/4)
+2026-06-03 23:56:21,500 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2018 Q2] 下載成功(requests) -> 201802_2330_合併財報.pdf
+2026-06-03 23:56:21,572 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2018 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:56:29,490 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2018 Q3] 下載成功(requests) -> 201803_2330_合併財報.pdf
+2026-06-03 23:56:29,550 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2018 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:56:33,098 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2018 Q4] 下載成功(requests) -> 201804_2330_合併財報.pdf
+2026-06-03 23:56:33,161 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2019 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:56:38,101 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2019 Q1] 下載成功(requests) -> 201901_2330_合併財報.pdf
+2026-06-03 23:56:38,159 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2019 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:56:39,912 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2019 Q2] 下載成功(requests) -> 201902_2330_合併財報.pdf
+2026-06-03 23:56:39,973 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2019 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:56:48,281 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2019 Q3] 下載成功(requests) -> 201903_2330_合併財報.pdf
+2026-06-03 23:56:48,348 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2019 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:56:48,401 - [Thread-ThreadPoolExecutor-0_0] - WARNING - ⛔ [2330] 查詢過量，退避 38.1s (attempt 1/4)
+2026-06-03 23:57:28,451 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2019 Q4] 下載成功(requests) -> 201904_2330_合併財報.pdf
+2026-06-03 23:57:28,511 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2020 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:57:34,166 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2020 Q1] 下載成功(requests) -> 202001_2330_合併財報.pdf
+2026-06-03 23:57:34,228 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2020 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:57:37,656 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2020 Q2] 下載成功(requests) -> 202002_2330_合併財報.pdf
+2026-06-03 23:57:37,728 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2020 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:57:41,880 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2020 Q3] 下載成功(requests) -> 202003_2330_合併財報.pdf
+2026-06-03 23:57:41,959 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2020 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:57:50,179 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2020 Q4] 下載成功(requests) -> 202004_2330_合併財報.pdf
+2026-06-03 23:57:50,243 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2021 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:57:53,187 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2021 Q1] 下載成功(requests) -> 202101_2330_合併財報.pdf
+2026-06-03 23:57:53,255 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2021 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:57:54,820 - [Thread-ThreadPoolExecutor-0_0] - WARNING - ⛔ [2330] 查詢過量，退避 39.9s (attempt 1/4)
+2026-06-03 23:58:36,822 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2021 Q2] 下載成功(requests) -> 202102_2330_合併財報.pdf
+2026-06-03 23:58:36,892 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2021 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:58:41,467 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2021 Q3] 下載成功(requests) -> 202103_2330_合併財報.pdf
+2026-06-03 23:58:41,527 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2021 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-03 23:58:56,322 - [Thread-ThreadPoolExecutor-0_0] - WARNING -    ✗ [2330-2021 Q4] attempt 1/4 transient 失敗：Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff701df7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff701df7e50+14900]
+	chromedriver!(No symbol) [0x7ff701b5d5ad]
+	chromedriver!(No symbol) [0x7ff701bb7822]
+	chromedriver!(No symbol) [0x7ff701bb7b2c]
+	chromedriver!(No symbol) [0x7ff701c07d17]
+	chromedriver!(No symbol) [0x7ff701c0486f]
+	chromedriver!(No symbol) [0x7ff701ba9df8]
+	chromedriver!(No symbol) [0x7ff701baace3]
+	chromedriver!GetHandleVerifier [0x7ff70210cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff702107375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff70212bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff701e16045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff701e1ecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff701e01bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff701e01d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff701de60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffe61177374+14]
+	ntdll!RtlUserThreadStart [0x7ffe62c3cc91+21]
+；退避 40.1s
+2026-06-03 23:59:48,828 - [Thread-ThreadPoolExecutor-0_0] - WARNING -    ✗ [2330-2021 Q4] attempt 2/4 transient 失敗：Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff701df7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff701df7e50+14900]
+	chromedriver!(No symbol) [0x7ff701b5d5ad]
+	chromedriver!(No symbol) [0x7ff701bb7822]
+	chromedriver!(No symbol) [0x7ff701bb7b2c]
+	chromedriver!(No symbol) [0x7ff701c07d17]
+	chromedriver!(No symbol) [0x7ff701c0486f]
+	chromedriver!(No symbol) [0x7ff701ba9df8]
+	chromedriver!(No symbol) [0x7ff701baace3]
+	chromedriver!GetHandleVerifier [0x7ff70210cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff702107375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff70212bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff701e16045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff701e1ecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff701e01bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff701e01d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff701de60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffe61177374+14]
+	ntdll!RtlUserThreadStart [0x7ffe62c3cc91+21]
+；退避 73.8s
+2026-06-04 00:01:15,953 - [Thread-ThreadPoolExecutor-0_0] - WARNING -    ✗ [2330-2021 Q4] attempt 3/4 transient 失敗：Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff701df7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff701df7e50+14900]
+	chromedriver!(No symbol) [0x7ff701b5d5ad]
+	chromedriver!(No symbol) [0x7ff701bb7822]
+	chromedriver!(No symbol) [0x7ff701bb7b2c]
+	chromedriver!(No symbol) [0x7ff701c07d17]
+	chromedriver!(No symbol) [0x7ff701c0486f]
+	chromedriver!(No symbol) [0x7ff701ba9df8]
+	chromedriver!(No symbol) [0x7ff701baace3]
+	chromedriver!GetHandleVerifier [0x7ff70210cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff702107375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff70212bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff701e16045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff701e1ecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff701e01bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff701e01d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff701de60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffe61177374+14]
+	ntdll!RtlUserThreadStart [0x7ffe62c3cc91+21]
+；退避 167.7s
+2026-06-04 00:04:15,317 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2021 Q4] 下載成功(requests) -> 202104_2330_合併財報.pdf
+2026-06-04 00:04:15,382 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2022 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:04:22,938 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2022 Q1] 下載成功(requests) -> 202201_2330_合併財報.pdf
+2026-06-04 00:04:23,112 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2022 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:04:30,495 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2022 Q2] 下載成功(requests) -> 202202_2330_合併財報.pdf
+2026-06-04 00:04:30,564 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2022 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:04:35,577 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2022 Q3] 下載成功(requests) -> 202203_2330_合併財報.pdf
+2026-06-04 00:04:35,638 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2022 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:04:38,488 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2022 Q4] 下載成功(requests) -> 202204_2330_合併財報.pdf
+2026-06-04 00:04:38,547 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2023 Q1] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:05:01,412 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2023 Q1] 下載成功(requests) -> 202301_2330_合併財報.pdf
+2026-06-04 00:05:01,476 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2023 Q2] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:05:08,050 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2023 Q2] 下載成功(requests) -> 202302_2330_合併財報.pdf
+2026-06-04 00:05:08,117 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2023 Q3] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:05:08,180 - [Thread-ThreadPoolExecutor-0_0] - WARNING - ⛔ [2330] 查詢過量，退避 42.2s (attempt 1/4)
+2026-06-04 00:05:53,361 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2023 Q3] 下載成功(requests) -> 202303_2330_合併財報.pdf
+2026-06-04 00:05:53,421 - [Thread-ThreadPoolExecutor-0_0] - INFO -    🚀 [2330-2023 Q4] 舊年份初始化模式啟用，允許首次抓取
+2026-06-04 00:05:59,044 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2023 Q4] 下載成功(requests) -> 202304_2330_合併財報.pdf
+2026-06-04 00:06:02,212 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2024 Q1] 下載成功(requests) -> 202401_2330_合併財報.pdf
+2026-06-04 00:06:06,585 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2024 Q2] 下載成功(requests) -> 202402_2330_合併財報.pdf
+2026-06-04 00:06:15,475 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2024 Q3] 下載成功(requests) -> 202403_2330_合併財報.pdf
+2026-06-04 00:06:19,526 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2024 Q4] 下載成功(requests) -> 202404_2330_合併財報.pdf
+2026-06-04 00:06:21,593 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2025 Q1] 下載成功(requests) -> 202501_2330_合併財報.pdf
+2026-06-04 00:06:26,054 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2025 Q2] 下載成功(requests) -> 202502_2330_合併財報.pdf
+2026-06-04 00:06:33,767 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2025 Q3] 下載成功(requests) -> 202503_2330_合併財報.pdf
+2026-06-04 00:06:48,853 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2025 Q4] 下載成功(requests) -> 202504_2330_合併財報.pdf
+2026-06-04 00:06:51,512 - [Thread-ThreadPoolExecutor-0_0] - INFO -    💾 [2330-2026 Q1] 下載成功(requests) -> 202601_2330_合併財報.pdf
+2026-06-04 00:06:51,580 - [Thread-ThreadPoolExecutor-0_0] - INFO -    ⏭ [2330-2026 Q2] 尚未到合理公告時間，跳過
+2026-06-04 00:06:51,580 - [Thread-ThreadPoolExecutor-0_0] - INFO -    ⏭ [2330-2026 Q3] 尚未到合理公告時間，跳過
+2026-06-04 00:06:51,580 - [Thread-ThreadPoolExecutor-0_0] - INFO -    ⏭ [2330-2026 Q4] 尚未到合理公告時間，跳過
+2026-06-04 00:20:55,310 - [Thread-MainThread] - DEBUG - Building prefix dict from c:\Users\lolee\Desktop\spring\stockSpr1nG\.venv\Lib\site-packages\jieba\dict.txt ...
+2026-06-04 00:20:56,109 - [Thread-MainThread] - DEBUG - Dumping model to file cache C:\Users\lolee\AppData\Local\Temp\jieba.cache
+2026-06-04 00:20:57,442 - [Thread-MainThread] - DEBUG - Loading model cost 2.130903720855713 seconds.
+2026-06-04 00:20:57,442 - [Thread-MainThread] - DEBUG - Prefix dict has been built succesfully.
