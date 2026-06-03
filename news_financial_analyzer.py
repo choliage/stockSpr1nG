@@ -11,6 +11,10 @@ from keyword_scanner import KEYWORD_PATTERN, get_news_root
 DEFAULT_BASE_DIR = os.path.join(os.path.expanduser("~"), "Desktop")
 
 
+def _looks_like_company_code(value: str) -> bool:
+    return bool(re.match(r"^[0-9]{3,6}[A-Z]?$", value.strip()))
+
+
 def _load_company_names(company_names_path: Optional[str] = None) -> Dict[str, str]:
     if company_names_path is None:
         company_names_path = os.path.join(os.path.dirname(__file__), "company_names.json")
@@ -22,7 +26,16 @@ def _load_company_names(company_names_path: Optional[str] = None) -> Dict[str, s
         data = json.load(f)
 
     if isinstance(data, dict):
-        return {str(k).strip(): str(v).strip() for k, v in data.items() if k}
+        normalized = {str(k).strip(): str(v).strip() for k, v in data.items() if k}
+        # 支援兩種格式：
+        # 1) code -> name
+        # 2) name -> code
+        if normalized and all(
+            not _looks_like_company_code(k) and _looks_like_company_code(v)
+            for k, v in normalized.items()
+        ):
+            return {v: k for k, v in normalized.items()}
+        return normalized
 
     if isinstance(data, list):
         return {str(item).strip(): "" for item in data if item}
