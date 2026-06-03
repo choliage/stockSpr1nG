@@ -23,7 +23,7 @@
 
 建議先建立虛擬環境，然後安裝相依套件：
 
-『`bash
+```bash
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 在專案根目錄執行：
 
-『`bash
+```bash
 python main.py
 ```
 
