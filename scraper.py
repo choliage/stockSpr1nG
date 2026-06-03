@@ -10,7 +10,14 @@ from urllib.parse import urljoin, urlparse, urlunparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from newspaper import Article
+
+try:
+    from newspaper import Article
+except ModuleNotFoundError as exc:
+    raise ModuleNotFoundError(
+        "newspaper3k requires the lxml html clean dependency. "
+        "請安裝 'lxml[html-clean]' 或 'lxml_html_clean' 之後再重試。"
+    ) from exc
 
 logger = logging.getLogger("stock_scraper")
 DEFAULT_BASE_DIR = os.path.join(os.path.expanduser("~"), "Desktop")

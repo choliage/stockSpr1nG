@@ -1,0 +1,7 @@
+selenium
+webdriver-manager
+requests
+openpyxl
+newspaper3k
+lxml[html-clean]
+pymongo
